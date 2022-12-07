@@ -1,0 +1,90 @@
+@import "reset";
+@import "design";
+@import "global";
+@import "variables";
+@import "mixins";
+
+header,
+main,
+footer,
+section {
+  outline: 1px solid $clr-secondary-100;
+}
+
+img {
+  margin-inline: auto;
+  &[data-type="profile-photos"] {
+    // object-fit: cover;
+    // object-position: 20px 20px;
+  }
+}
+
+.foot-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.foot-bg {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.foot-content {
+  position: relative;
+}
+
+footer {
+  // @include FlexCenter(column);
+  // background-color: $clr-primary-400;
+  // background-image: url("../assets/mobile/image-footer.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-blend-mode: multiply;
+  // opacity: 0.5;
+  span {
+    font-weight: $fw-600;
+    color: $clr-secondary-100;
+  }
+  h2,
+  p {
+    color: $clr-white;
+  }
+}
+
+.buttons {
+  @include FlexCenter(column);
+}
+
+button {
+  padding: $size-4 $size-12;
+  border: none;
+  border-radius: $size-8;
+  color: $clr-white;
+  font-weight: $fw-700;
+  span {
+    font-weight: $fw-600;
+  }
+  &[data-type="primary-color"] {
+    background-color: $clr-primary-400;
+    span {
+      color: $clr-primary-100;
+    }
+  }
+  &[data-type="secondary-color"] {
+    background-color: $clr-secondary-400;
+  }
+}
+
+.btn-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    padding-right: $size-2;
+  }
+}

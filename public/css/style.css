@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(240deg, 10%, 57%);
+}
+
+.wrapper {
+  width: min(100% - 2rem);
+  margin-inline: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+header,
+main,
+footer,
+section {
+  outline: 1px solid hsl(265deg, 100%, 86%);
+}
+
+img {
+  margin-inline: auto;
+}
+.foot-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.foot-bg {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.foot-content {
+  position: relative;
+}
+
+footer span {
+  font-weight: 600;
+  color: hsl(265deg, 100%, 86%);
+}
+footer h2,
+footer p {
+  color: hsl(0deg, 0%, 98%);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  color: hsl(0deg, 0%, 98%);
+  font-weight: 700;
+}
+button span {
+  font-weight: 600;
+}
+button[data-type=primary-color] {
+  background-color: hsl(192deg, 37%, 48%);
+}
+button[data-type=primary-color] span {
+  color: hsl(192deg, 90%, 77%);
+}
+button[data-type=secondary-color] {
+  background-color: hsl(268deg, 34%, 53%);
+}
+
+.btn-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-large h3 {
+  padding-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
