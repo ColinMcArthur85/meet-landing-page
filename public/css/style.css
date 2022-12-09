@@ -113,7 +113,7 @@ p {
 }
 
 .flow > * + * {
-  margin-top: var(--flow-space, 1em);
+  margin-top: var(--flow-space, 1rem);
 }
 
 header,
@@ -126,6 +126,13 @@ section {
 img {
   margin-inline: auto;
 }
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .foot-wrap {
   overflow: hidden;
   position: relative;
@@ -142,6 +149,10 @@ img {
 
 .foot-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer span {
@@ -188,6 +199,14 @@ button[data-type=secondary-color] {
 }
 .btn-large h3 {
   padding-right: 0.5rem;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: hsl(240deg, 10%, 57%) 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
