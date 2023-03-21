@@ -9,12 +9,12 @@ h2 {
 }
 
 h1 {
-  font-size: $size-12;
-  line-height: $size-14;
-}
-h2 {
   font-size: $size-8;
   line-height: $size-8;
+}
+h2 {
+  font-size: $size-6;
+  line-height: $size-6;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 }
 
 .wrapper {
-  width: min(100% - 2rem);
+  width: min(100% - 4rem);
   margin-inline: auto;
 }
 
